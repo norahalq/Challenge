@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/319a27fa32.js" crossorigin="anonymous"></script>
+
+
+    <title> تدوين</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="continer">
+            <div class="logo"> 
+                <h1>تدوين</h1></div>
+            <nav>
+              <ul>
+                    <li ><a href="#">الرِئيسية</a></li> 
+                    <li><a href="#">من نحن</a></li> 
+                    <li><a href="#"> الخدمات</a></li> 
+                    <li><a href="#"> اتصل بنا</a></li>  
+                </ul>
+            </nav>
+            <!-- End Header -->
+            <!-- Responsive -->
+            <span id="open">&#9776;</span>
+            <ul id="sideNav">
+                <li ><a  id="close" href="#">&times;</a></li> 
+                <li><a href="#">الرِئيسية</a></li> 
+                <li><a href="#">من نحن</a></li> 
+                <li><a href="#"> الخدمات</a></li> 
+                <li><a href="#"> اتصل بنا</a></li>  
+
+            </ul>
+            </div>
+    </header>
+<!-- Start Home -->
+    <div id="Home">
+        <div class="overLay">
+            <div class="container">
+                <div class="home-Text">
+                    <h2> موقع تدوين </h2>
+                    <p>
+                    موقع مختص بالمقالات التقنية
+                    </p>
+                    <button> أقرأ المزيد</button>
+                </div>
+    </div>
+        </div>
+            </div>
+<!-- End Home -->
+    </div> <!-- //container -->     
+        <!-- // close class container -->
+</div> 
+
+<!-- Start Fotter -->
+<footer>
+<p> جميع الحقوق محفوظة &copy; 2021 Norah </p>
+</footer>
+
+<!-- End Fotter -->
+    <script type="text/javascript">
+    var open_Menu=document.getElementById('open')
+    var close_Menu=document.getElementById('close')
+    var side_Nav=document.getElementById('sideNav')
+
+    open_Menu.addEventListener('click',openSideNav)
+    function openSideNav(){
+        side_Nav.style.width='100%';
+    }
+ close_Menu.addEventListener('click',closeSideNav)
+ function closeSideNav(){
+
+     side_Nav.style.width="0";
+ }
+    </script>
+</body>
+</html>
